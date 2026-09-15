@@ -9,7 +9,7 @@
 FROM busybox:1.38.0-uclibc AS busybox_builder
 
 # Main image
-FROM grafana/mimir:3.2.0 AS base
+FROM grafana/mimir:3.2.1 AS base
 
 # Copy busybox from builder stage
 COPY --from=busybox_builder /bin/busybox /bin/busybox
